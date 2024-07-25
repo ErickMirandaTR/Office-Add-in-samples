@@ -1,5 +1,7 @@
 ﻿@* Copyright (c) Maarten van Stam. All rights reserved. Licensed under the MIT License. *@
 @page "/"
+@using ThomsonReuters.Components.Saffron
+@using ThomsonReuters.Components.Saffron.Enums
 
 <PageTitle>Hello World</PageTitle>
 
@@ -13,4 +15,22 @@
 	<div class="col-md-6">
 		<button type="button" class="btn btn-primary" @onclick="HelloButton">Hello world!</button>
 	</div>
+
+
+	<div class="mt-2">
+		<p role="status">Current count: @currentCount</p>
+		<SaffronButton @onclick="IncrementCount" Autofocus="false" Appearance="ButtonAppearance.Secondary">
+			<saf-icon color="#404040" icon-name="house" appearance="solid"></saf-icon>
+			&nbsp;Add new
+		</SaffronButton>
+	</div>
 </div>
+
+@code {
+	private int currentCount = 0;
+
+	private void IncrementCount()
+	{
+		currentCount++;
+	}
+}

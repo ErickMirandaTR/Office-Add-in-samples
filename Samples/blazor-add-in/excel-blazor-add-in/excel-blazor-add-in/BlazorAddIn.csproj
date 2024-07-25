@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.JSInterop.WebAssembly" Version="8.0.3" />
+    <PackageReference Include="ThomsonReuters.Components.Saffron" Version="0.0.3" />
   </ItemGroup>
 
   <ItemGroup>
